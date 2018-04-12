@@ -7,19 +7,25 @@
   <title>Document</title>
 </head>
 <body>
-
+<!--  Template  -->
+<div id="app">
+    <div>
+        <input type="text" v-model="yourName" placeholder="Your Name?" />
+        <h5>Hello, {{yourName}}</h5>
+    </div>
+</div>
 
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script>
       /* Create a Vue instance*/
-       new Vue({
-           template: '#app',
-           data: function() {
-               return {
-                   name: ''
-               }
-           }
-       }).$mount('#app');
+     newVue({
+         template: '#app',
+         data: function() {
+             return {
+                 name: ''
+             }
+         }
+     }).$mount('#app');
    </script>
 </body>
 </html>
